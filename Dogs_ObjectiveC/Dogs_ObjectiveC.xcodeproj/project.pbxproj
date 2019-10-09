@@ -13,6 +13,9 @@
 		E8FA9772234E771400CF567B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FA9771234E771400CF567B /* Assets.xcassets */; };
 		E8FA9775234E771400CF567B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FA9773234E771400CF567B /* LaunchScreen.storyboard */; };
 		E8FA9778234E771400CF567B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA9777234E771400CF567B /* main.m */; };
+		E8FA978A234E7B2B00CF567B /* JRC_Breed.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA9789234E7B2B00CF567B /* JRC_Breed.m */; };
+		E8FA978D234E7B3600CF567B /* JRC_SubBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA978C234E7B3600CF567B /* JRC_SubBreed.m */; };
+		E8FA9790234E83DE00CF567B /* JRC_BreedNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA978F234E83DE00CF567B /* JRC_BreedNetworkClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		E8FA9774234E771400CF567B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8FA9776234E771400CF567B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8FA9777234E771400CF567B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8FA9788234E7B2B00CF567B /* JRC_Breed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_Breed.h; sourceTree = "<group>"; };
+		E8FA9789234E7B2B00CF567B /* JRC_Breed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_Breed.m; sourceTree = "<group>"; };
+		E8FA978B234E7B3600CF567B /* JRC_SubBreed.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_SubBreed.h; sourceTree = "<group>"; };
+		E8FA978C234E7B3600CF567B /* JRC_SubBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_SubBreed.m; sourceTree = "<group>"; };
+		E8FA978E234E83DE00CF567B /* JRC_BreedNetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_BreedNetworkClient.h; sourceTree = "<group>"; };
+		E8FA978F234E83DE00CF567B /* JRC_BreedNetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_BreedNetworkClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,7 @@
 				E8FA9785234E77B200CF567B /* UI */,
 				E8FA9782234E779D00CF567B /* ModelViewControllers */,
 				E8FA9781234E779600CF567B /* ModelControllers */,
+				E8FA9791234E83EF00CF567B /* Network */,
 				E8FA977F234E777D00CF567B /* Models */,
 				E8FA9780234E778100CF567B /* HelperFiles */,
 				E8FA977E234E777800CF567B /* Resources */,
@@ -85,6 +95,10 @@
 		E8FA977F234E777D00CF567B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E8FA9788234E7B2B00CF567B /* JRC_Breed.h */,
+				E8FA9789234E7B2B00CF567B /* JRC_Breed.m */,
+				E8FA978B234E7B3600CF567B /* JRC_SubBreed.h */,
+				E8FA978C234E7B3600CF567B /* JRC_SubBreed.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -151,6 +165,15 @@
 			path = StroyBoards;
 			sourceTree = "<group>";
 		};
+		E8FA9791234E83EF00CF567B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E8FA978E234E83DE00CF567B /* JRC_BreedNetworkClient.h */,
+				E8FA978F234E83DE00CF567B /* JRC_BreedNetworkClient.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,6 +200,7 @@
 		E8FA975A234E771200CF567B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JRC_;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = JesseRae;
 				TargetAttributes = {
@@ -223,6 +247,9 @@
 			files = (
 				E8FA9767234E771200CF567B /* AppDelegate.m in Sources */,
 				E8FA9778234E771400CF567B /* main.m in Sources */,
+				E8FA9790234E83DE00CF567B /* JRC_BreedNetworkClient.m in Sources */,
+				E8FA978D234E7B3600CF567B /* JRC_SubBreed.m in Sources */,
+				E8FA978A234E7B2B00CF567B /* JRC_Breed.m in Sources */,
 				E8FA976A234E771200CF567B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +392,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
-				INFOPLIST_FILE = Dogs_ObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dogs_ObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +409,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
-				INFOPLIST_FILE = Dogs_ObjectiveC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Dogs_ObjectiveC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
