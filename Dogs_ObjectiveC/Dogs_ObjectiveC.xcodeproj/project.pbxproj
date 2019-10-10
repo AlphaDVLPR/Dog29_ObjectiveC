@@ -16,6 +16,10 @@
 		E8FA978A234E7B2B00CF567B /* JRC_Breed.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA9789234E7B2B00CF567B /* JRC_Breed.m */; };
 		E8FA978D234E7B3600CF567B /* JRC_SubBreed.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA978C234E7B3600CF567B /* JRC_SubBreed.m */; };
 		E8FA9790234E83DE00CF567B /* JRC_BreedNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E8FA978F234E83DE00CF567B /* JRC_BreedNetworkClient.m */; };
+		E8FA9794234EFE2600CF567B /* BreedsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA9793234EFE2600CF567B /* BreedsListTableViewController.swift */; };
+		E8FA9796234F900900CF567B /* JRC_SubBreedListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA9795234F900900CF567B /* JRC_SubBreedListTableViewController.swift */; };
+		E8FA9798234F906700CF567B /* JRC_DogImagesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA9797234F906700CF567B /* JRC_DogImagesCollectionViewController.swift */; };
+		E8FA979B234F908500CF567B /* JRC_DogImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FA979A234F908500CF567B /* JRC_DogImageDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,11 @@
 		E8FA978C234E7B3600CF567B /* JRC_SubBreed.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_SubBreed.m; sourceTree = "<group>"; };
 		E8FA978E234E83DE00CF567B /* JRC_BreedNetworkClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRC_BreedNetworkClient.h; sourceTree = "<group>"; };
 		E8FA978F234E83DE00CF567B /* JRC_BreedNetworkClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRC_BreedNetworkClient.m; sourceTree = "<group>"; };
+		E8FA9792234EFE2600CF567B /* Dogs_ObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Dogs_ObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
+		E8FA9793234EFE2600CF567B /* BreedsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListTableViewController.swift; sourceTree = "<group>"; };
+		E8FA9795234F900900CF567B /* JRC_SubBreedListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRC_SubBreedListTableViewController.swift; sourceTree = "<group>"; };
+		E8FA9797234F906700CF567B /* JRC_DogImagesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRC_DogImagesCollectionViewController.swift; sourceTree = "<group>"; };
+		E8FA979A234F908500CF567B /* JRC_DogImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JRC_DogImageDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +138,11 @@
 		E8FA9783234E77A600CF567B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E8FA9793234EFE2600CF567B /* BreedsListTableViewController.swift */,
+				E8FA9792234EFE2600CF567B /* Dogs_ObjectiveC-Bridging-Header.h */,
+				E8FA9795234F900900CF567B /* JRC_SubBreedListTableViewController.swift */,
+				E8FA9797234F906700CF567B /* JRC_DogImagesCollectionViewController.swift */,
+				E8FA979A234F908500CF567B /* JRC_DogImageDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +220,7 @@
 				TargetAttributes = {
 					E8FA9761234E771200CF567B = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -246,10 +261,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8FA9767234E771200CF567B /* AppDelegate.m in Sources */,
+				E8FA9796234F900900CF567B /* JRC_SubBreedListTableViewController.swift in Sources */,
+				E8FA979B234F908500CF567B /* JRC_DogImageDetailViewController.swift in Sources */,
 				E8FA9778234E771400CF567B /* main.m in Sources */,
 				E8FA9790234E83DE00CF567B /* JRC_BreedNetworkClient.m in Sources */,
 				E8FA978D234E7B3600CF567B /* JRC_SubBreed.m in Sources */,
+				E8FA9798234F906700CF567B /* JRC_DogImagesCollectionViewController.swift in Sources */,
 				E8FA978A234E7B2B00CF567B /* JRC_Breed.m in Sources */,
+				E8FA9794234EFE2600CF567B /* BreedsListTableViewController.swift in Sources */,
 				E8FA976A234E771200CF567B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/Dogs_ObjectiveC/Resources/Info.plist";
@@ -399,6 +419,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JesseRae.Dogs-ObjectiveC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dogs_ObjectiveC/ModelViewControllers/Controllers/Dogs_ObjectiveC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -407,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J27FYKQAGV;
 				INFOPLIST_FILE = "$(SRCROOT)/Dogs_ObjectiveC/Resources/Info.plist";
@@ -416,6 +440,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JesseRae.Dogs-ObjectiveC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Dogs_ObjectiveC/ModelViewControllers/Controllers/Dogs_ObjectiveC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

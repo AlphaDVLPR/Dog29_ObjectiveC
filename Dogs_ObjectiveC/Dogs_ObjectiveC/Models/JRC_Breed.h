@@ -11,6 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface JRC_Breed : NSObject
 
@@ -22,8 +23,11 @@
 
 //MARK: - Initializers
 
-- (instancetype)initWithBreedName:(NSString *)name subBreeds:(NSArray *)subBreeds imageUrls:(NSArray *)imageUrls;
+- (instancetype)initWithBreedName:(NSString *)name
+                        subBreeds:(NSArray *)subBreeds
+                        imageUrls:(NSArray *)imageUrls;
 
 @end
 
+NS_ASSUME_NONNULL_END
 

@@ -11,7 +11,7 @@
         <!--Dog Breeds-->
         <scene sceneID="19m-z8-O01">
             <objects>
-                <tableViewController id="qx6-eL-qxA" sceneMemberID="viewController">
+                <tableViewController id="qx6-eL-qxA" customClass="BreedsListTableViewController" customModule="Dogs_ObjectiveC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="eZn-5g-HdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -53,7 +53,7 @@
         <!--Sub-Breed-->
         <scene sceneID="Xi9-9D-2E4">
             <objects>
-                <tableViewController id="SCN-i2-RjU" sceneMemberID="viewController">
+                <tableViewController id="SCN-i2-RjU" customClass="JRC_SubBreedListTableViewController" customModule="Dogs_ObjectiveC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ph7-gO-Wq5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -94,7 +94,7 @@
         <!--Dog Images-->
         <scene sceneID="3RR-F5-8pf">
             <objects>
-                <collectionViewController id="1oV-Ph-eAQ" sceneMemberID="viewController">
+                <collectionViewController id="1oV-Ph-eAQ" customClass="JRC_DogImagesCollectionViewController" customModule="Dogs_ObjectiveC" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="7vh-bV-7Dv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,10 +141,10 @@
             </objects>
             <point key="canvasLocation" x="721.73913043478262" y="746.65178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Dog Image Detail View Controller-->
         <scene sceneID="Fax-jx-GBE">
             <objects>
-                <viewController id="h97-kw-DcG" sceneMemberID="viewController">
+                <viewController id="h97-kw-DcG" customClass="JRC_DogImageDetailViewController" customModule="Dogs_ObjectiveC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kQy-Oj-1WM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
