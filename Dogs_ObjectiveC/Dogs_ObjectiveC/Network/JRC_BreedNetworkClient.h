@@ -7,11 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "JRC_Breed.h"
+#import "JRC_SubBreed.h"
 
 @interface JRC_BreedNetworkClient : NSObject
 
-@end
+//MARK: - Shared Instance
 
-NS_ASSUME_NONNULL_END
++ (JRC_BreedNetworkClient *)shared;
+
+//MARK: - Functions
+//This method will fetch all of the breeds
+- (void)fetchAllBreeds:(void (^) (NSArray <JRC_Breed *> *allBreeds))completion;
+
+//This method will fetch the images of dog breeds
+- (void)fetchBreedImageURLs:(JRC_Breed *)breed completion:(void (^) (NSArray *))completion;
+
+//This method will fetch the images of dog sub-breeds
+- (void)fetchSubBreedImageURLs:(JRC_SubBreed *)subBreed breed:(JRC_Breed *)breed completion:(void (^) (NSArray *))completion;
+                  
+//This method will fetch the image Data in the form of NSData
+- (void)fetchImageData:(NSURL *)url completion:(void (^) (NSData *imageData))completion;
+                                
+@end
